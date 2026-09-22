@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import Slider from "@react-native-community/slider";
 import { WebView } from "react-native-webview";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const HTML = `
 <!DOCTYPE html>
@@ -67,8 +68,8 @@ const HTML = `
     interactions: [], 
 
     view: new ol.View({
-      center: ol.proj.fromLonLat([127.4, 38.5]),
-      zoom: 6.1
+      center: ol.proj.fromLonLat([127.4, 38.3]),
+      zoom: 6
     }),
     controls: []
   });
